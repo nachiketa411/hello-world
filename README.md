@@ -15,3 +15,7 @@ Lets see if my api picks this event up.
 
 - The Auth Service was generating the wrong url to trigger.
 - My error. I forgot to add the preceding `/`
+
+### Test 4
+
+- Added a log in the response body to see the full error message from Github.
