@@ -26,3 +26,7 @@ Lets see if my api picks this event up.
 
 - GitHub's maximum is 10 minutes
 - Changing the time from 540 -> 480
+
+### Test 6
+
+- Testing to see if i see the changed files list and the logs with additions and deletions if any in the given file.
