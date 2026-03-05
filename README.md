@@ -19,3 +19,10 @@ Lets see if my api picks this event up.
 ### Test 4
 
 - Added a log in the response body to see the full error message from Github.
+
+### Test 5
+
+- The error message: `java.lang.RuntimeException: Failed to fetch installation token: 401 - {"message":"'Expiration time' claim ('exp') is too far in the future","documentation_url":"https://docs.github.com/rest","status":"401"}`
+
+- GitHub's maximum is 10 minutes
+- Changing the time from 540 -> 480
