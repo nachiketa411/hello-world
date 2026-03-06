@@ -47,3 +47,8 @@ Lets see if my api picks this event up.
 
 - I dont see inline comments, I see the PR comments.
 - Debugging it right now.
+
+### Test 9
+
+- The DiffCalculator is returning `-1` due to which inline comments are being skipped.
+- Printing the patch string itself, to see where the problem is.
