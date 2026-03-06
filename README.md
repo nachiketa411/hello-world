@@ -30,3 +30,11 @@ Lets see if my api picks this event up.
 ### Test 6
 
 - Testing to see if i see the changed files list and the logs with additions and deletions if any in the given file.
+
+### New Change
+
+- The webhook endpoint is publicly accessible. Anyone who is able to find my NGROK url, can send fake requests to it.
+- We need to verify the identify of the sender and the integrity of the payload.
+- It needs to verify that Github is the sender.
+- Github computes an HMAC-SHA256 signature of request body using our generated secret and puts it in the `X-Hub-Signature=256` header.
+- If we receive a fake request, the sender cannot reproduce our generated secret, and thus the signatures wont match.
