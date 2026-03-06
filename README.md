@@ -52,3 +52,10 @@ Lets see if my api picks this event up.
 
 - The DiffCalculator is returning `-1` due to which inline comments are being skipped.
 - Printing the patch string itself, to see where the problem is.
+
+### Test 10
+
+- Updated the diff calculator logic.
+- Currently, it should add a comment on `lineNumber` that we are passing through `getFirstAddedLineNumber()`, but with the integration of AI service, it is expected that the AI will return the exact line number to add the comments to and we will pass that.
+- Github only accepts the relative position to add the comments to, not absolute line numbers.
+- Example: If the AI service tells that the issue is line 50, then we need to parse to line 50 and find the position in respect to the file diff, which would be 10 lines for example. So if we pass line 50 to github, it will result in an error saying that line 50 does not exist in terms of the file diff.
