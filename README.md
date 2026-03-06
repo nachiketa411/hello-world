@@ -42,3 +42,8 @@ Lets see if my api picks this event up.
 ### Test 7
 
 - On opening a new PR, the API should trigger a comment on the recently opened PR.
+
+### Test 8
+
+- I dont see inline comments, I see the PR comments.
+- Debugging it right now.
