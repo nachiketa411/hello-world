@@ -38,3 +38,7 @@ Lets see if my api picks this event up.
 - It needs to verify that Github is the sender.
 - Github computes an HMAC-SHA256 signature of request body using our generated secret and puts it in the `X-Hub-Signature=256` header.
 - If we receive a fake request, the sender cannot reproduce our generated secret, and thus the signatures wont match.
+
+### Test 7
+
+- On opening a new PR, the API should trigger a comment on the recently opened PR.
