@@ -64,3 +64,20 @@ Lets see if my api picks this event up.
 
 - Added a Guard to not trigger api on same PR calls.
 - Will go to Github app to try and redeliver a webhook event
+
+### Test 12: Testing Pagination
+
+- Adding 120 random files in this repository to check if the paginator api is working as it should.
+- To create 120 files:
+  ```
+  mkdir bulk-test
+  1..120 | ForEach-Object { "test $_" | Out-File "bulk-test/file-$_.txt" }
+  ```
+
+### Test 13: Testing In-line comments
+
+- Updating all 120 files
+
+```
+1..120 | ForEach-Object { "new test $_" | Out-File "bulk-test/file-$_.txt" }
+```
